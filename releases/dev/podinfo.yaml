@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: oroncohen/podinfo
-      tag: dev-gn43xaj9
+      tag: dev-wxwpdsxv
       #tag: dev-hdtwcel9
     replicaCount: 1
     hpa:
