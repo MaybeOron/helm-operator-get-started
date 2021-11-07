@@ -1,0 +1,25 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: podinfo-ver
+  namespace: ver
+  annotations:
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: glob:ver-*
+spec:
+  releaseName: podinfo-ver
+  chart:
+    git: git@github.com:MaybeOron/helm-operator-get-started
+    path: charts/podinfo
+    ref: master
+  values:
+    image:
+      repository: oroncohen/podinfo
+      tag: stg-owahiav9
+    replicaCount: 2
+    hpa:
+      enabled: true
+      maxReplicas: 3
+      cpu: 50
+      memory: 256Mi
