@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: oroncohen/podinfo
-      tag: ver-mf2cjc4u
+      tag: ver-embruied
     replicaCount: 2
     hpa:
       enabled: true
