@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: oroncohen/podinfo
-      tag: stg-owahiav9
+      tag: ver-mf2cjc4u
     replicaCount: 2
     hpa:
       enabled: true
